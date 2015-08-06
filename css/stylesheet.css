@@ -1,0 +1,265 @@
+/* LOCAL FONTS */
+@font-face {
+    font-family: 'Nexa';
+    src: url('NexaLight.eot');
+    src: url('NexaLight.eot?#iefix') format('embedded-opentype'), 
+        url('NexaLight.woff') format('woff'), 
+        url('NexaLight.ttf') format('truetype'), 
+        url('NexaLight.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('NexaBold.eot');
+    src: url('NexaBold.eot?#iefix') format('embedded-opentype'), 
+        url('NexaBold.woff') format('woff'), 
+        url('NexaBold.ttf') format('truetype'), 
+        url('NexaBold.svg#webfont') format('svg');
+}
+
+
+
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* GENERIC STYLES */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Nexa;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+b, h2, h4 {
+    font-family: 'NexaBold';
+}
+
+div {
+    overflow: hidden;
+}
+
+em {
+    color: #01BFD5;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 4.5em;
+    letter-spacing: -0.063em;
+    line-height: 90%;
+}
+
+h2 {
+    font-size: 2.75em;
+    letter-spacing: 2px;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+.verticalCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+
+
+/* HEADER STYLES */
+header {
+    clear: both;
+}
+
+.header {
+    color: #000;
+    padding: 2em 0 1em 0;
+}
+
+.subheading li {
+    background-color: #383838;
+    margin-left: 0.25em;
+}
+
+.subheading li.active {
+    background-color: #01BFD5;
+    font-family: 'NexaBold';
+}
+
+.subheading a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    width: 9.375em;
+}
+
+
+
+/* MAIN STYLES */
+main {
+    background: linear-gradient(90deg, #01BFD5 50%, #E5E5E5 50%);
+    clear: both;
+    width: 100%;
+}
+
+.main {
+    position: relative;
+}
+
+.content-heading {
+    background-color: #01BFD5;
+    padding: 1em 1em 1em 0;
+    width: 33.3%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.content {
+    background-color: #E5E5E5;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    padding: 3em 0 3em 1em;
+    text-align: justify;
+    width: 66.7%;
+}
+
+.content.about p:last-child {
+    padding-bottom: 0;
+}
+
+.content.education table {
+    width: 100%;
+}
+
+.content.education thead th {
+    background-color: #383838;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 0.3em 0.5em;
+}
+
+.content.education tbody td {
+    padding-left: 2.25em;
+}
+
+.content.education tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+
+
+/* FOOTER STYLES */
+footer {
+    background-color: #383838;
+    clear: both;
+    width: 100%;
+}
+
+.footer {
+    padding: 1em 0;
+    position: relative;
+}
+
+.media-buttons {
+    font-size: 2em;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.media-buttons li {
+    padding-right: 0.25em;
+}
+
+.media-buttons .fa {
+    display: block;
+}
+
+.contact-information {
+    text-align: right;
+    width: 50%;
+}

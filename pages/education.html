@@ -1,0 +1,21 @@
+<!-- about.html -->
+<div class="content-heading">
+    <h2 class="verticalCenter">{{education.heading}}</h2>
+</div>
+<div class="content right education">
+    <p ng-repeat="paragraph in education.content.paragraphs">{{paragraph}}</p>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"><b>{{education.content.classes.heading}}</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="class in education.content.classes.data">
+                <td><b>{{class.id}}</b></td>
+                <td>{{class.name}}</td>
+                <td><b><em>{{class.grade}}</em></b></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
