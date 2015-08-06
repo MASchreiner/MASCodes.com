@@ -146,9 +146,6 @@ p {
 /* HEADER STYLES */
 header {
     clear: both;
-}
-
-.header {
     color: #000;
     padding: 2em 0 1em 0;
 }
